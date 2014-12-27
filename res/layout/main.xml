@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CampusBoard"
+        android:textAppearance="?android:attr/textAppearanceLarge" >
+</TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ToggleButton
+            android:id="@+id/power_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.53"
+            android:text="ToggleButton"
+            android:textOff="Power Off"
+            android:textOn="Power On" />
+
+        <ToggleButton
+            android:id="@+id/mode_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.41"
+            android:text="ToggleButton"
+            android:textOff="Test Mode Off"
+            android:textOn="Test Mode On" />
+
+    </LinearLayout>
+
+    <Button android:id="@+id/button" android:layout_height="wrap_content" android:layout_width="match_parent" android:text="Scan Bluetooth Devices" android:layout_weight="0.05"></Button>
+
+    <Button
+        android:id="@+id/link_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connect" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_weight="0.41"
+        android:fastScrollAlwaysVisible="true"
+        android:fastScrollEnabled="true" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/send_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send" />
+
+</LinearLayout>
+</ScrollView>
